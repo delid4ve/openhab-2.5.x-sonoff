@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?><sca xmlns:pmdns="http://pmd.sourceforge.net/report/2.0.0" xmlns:functx="http://www.functx.com">
+   <file name="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessage.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageEncryptionUtilities.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageUtilities.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManager.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+      <message tool="checkstyle" line="135" message="Remove empty line before closing brace" priority="3" rule="NoEmptyLineSeparatorCheck" category="style"/>
+      <message tool="checkstyle" line="305" message="Remove empty line after opening brace" priority="3" rule="NoEmptyLineSeparatorCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManagerListener.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.config.DeviceConfig.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.connection.SonoffApiConnection.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.connection.SonoffApiConnectionListener.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.connection.SonoffConnectionManager.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.connection.SonoffConnectionManagerListener.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.connection.SonoffLanConnection.java">
+      <message tool="pmd" line="122" message="&#xA;Avoid empty if statements&#xA;" priority="3" rule="EmptyIfStmt" rule_url="https://pmd.github.io/pmd-6.7.0/pmd_rules_java_errorprone.html#emptyifstmt" category="error prone"/>
+   <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+<file name="org.openhab.binding.sonoff.internal.connection.SonoffLanConnectionListener.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnection.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnectionListener.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.discovery.SonoffDiscoveryService.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.AbstractCommand.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.Brightness.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.Color.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.Consumption.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.Info.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.Login.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.Mode.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.MultiSwitch.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.MusicMode.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.RFChannel.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.RGBLight.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.Sensitivity.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.SingleSwitch.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.SLed.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.Speed.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.UiActive.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.White.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.commands.ZLed.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.ApiLoginRequest.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.ApiStatusChange.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.ApiStatusGet.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.GeneralRequest.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.ThingList.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.Things.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.WebsocketRequest.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.WsQuery.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.requests.WsUpdate.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.responses.Data.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.responses.LanResponse.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.responses.User.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.dto.responses.WsServerResponse.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffAccountHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffBaseBridgeHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffBaseDeviceHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffBaseZigbeeHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffDeviceListener.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffDeviceState.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffDeviceStateParameters.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffGSMSocketHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffMagneticSwitchHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffRfBridgeHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceListener.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffRGBStripHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchMultiHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWR2Handler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchSingleHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchTHHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeBridgeHandler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice1770Handler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice2026Handler.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDeviceListener.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.SonoffBindingConstants.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.SonoffCacheProvider.java">
+      <message tool="findbugs" line="" message="&#xA;      Logger should be non-static field. Change this field (logger) to non-static field.&#xA;    " priority="3" rule="Logger should be non-static field (SLF4J)" category="bad practice" rule_id="SLF4J_LOGGER_SHOULD_BE_NON_STATIC"/>
+   <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+      <message tool="checkstyle" line="46" message="Name 'logger' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'." priority="3" rule="ConstantNameCheck" category="style"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffDeviceState.java">
+      <message tool="findbugs" line="35" message="&#xA;      Illegal class is passed to LoggerFactory#getLogger(Class). It should be one of [org.openhab.binding.sonoff.internal.handler.SonoffDeviceState].&#xA;    " priority="1" rule="Illegal class is passed to LoggerFactory#getLogger(Class) (SLF4J)" category="correctness" rule_id="SLF4J_ILLEGAL_PASSED_CLASS"/>
+   </file>
+   <file name="org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler.java">
+      <message tool="findbugs" line="39" message="&#xA;      Illegal class is passed to LoggerFactory#getLogger(Class). It should be one of [org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler].&#xA;    " priority="1" rule="Illegal class is passed to LoggerFactory#getLogger(Class) (SLF4J)" category="correctness" rule_id="SLF4J_ILLEGAL_PASSED_CLASS"/>
+   </file>
+<file name="org.openhab.binding.sonoff.internal.SonoffHandlerFactory.java">
+      <message tool="checkstyle" line="2" message="Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$" priority="1" rule="ParameterizedRegexpHeaderCheck" category="style"/>
+   </file>
+
+
+
+
+
+
+
+
+
+</sca>

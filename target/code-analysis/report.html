@@ -1,0 +1,2559 @@
+<html xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <title>Analysis Report</title><style type="text/css">
+					body {margin-left: 3%; font-size:10pt;font-family:Arial;color:#000000 ; }					
+					table.details tr th {font-size:10pt;font-family:Arial;font-weight:bold;background:#AC58FA}
+					table.details tr {font-size:10pt;font-family:Arial;font-weight:normal;background:#BEa1Fa}
+					table tbody	tr.alternate {background:#BAF4A7;}
+					table tbody tr.dark {background:#F4F4A7;}
+				</style></head>
+   <body>
+      <h2>Report
+         					 
+         					(2021-04-19+01:00;
+         					 12:21:19.432+01:00)
+         				
+      </h2>
+      <h3>Summary Messages</h3>
+      <table width="90%" border="0" class="details">
+         <tr>
+            <th align="left">category</th>
+            <th align="left">tool</th>
+            <th align="left">priority</th>
+            <th align="left">rule</th>
+            <th align="left">count</th>
+         </tr>
+         <tr>
+            <td colspan="5">bad practice</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>findbugs</td>
+            <td align="left">3</td>
+            <td> <a href="http://findbugs.sourceforge.net/bugDescriptions.html#SLF4J_LOGGER_SHOULD_BE_NON_STATIC">Logger should be non-static field (SLF4J)</a></td>
+            <td align="center">1</td>
+         </tr>
+         <tr>
+            <td colspan="5">correctness</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>findbugs</td>
+            <td align="left">1</td>
+            <td> <a href="http://findbugs.sourceforge.net/bugDescriptions.html#SLF4J_ILLEGAL_PASSED_CLASS">Illegal class is passed to LoggerFactory#getLogger(Class) (SLF4J)</a></td>
+            <td align="center">2</td>
+         </tr>
+         <tr>
+            <td colspan="5">error prone</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>pmd</td>
+            <td align="left">3</td>
+            <td> <a href="https://pmd.github.io/pmd-6.7.0/pmd_rules_java_errorprone.html#emptyifstmt">EmptyIfStmt</a></td>
+            <td align="center">1</td>
+         </tr>
+         <tr>
+            <td colspan="5">style</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">1</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td align="center">72</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>NoEmptyLineSeparatorCheck</td>
+            <td align="center">2</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>ConstantNameCheck</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="dark">
+            <td colspan="4"></td>
+            <td align="center">79</td>
+         </tr>
+      </table>
+      <p></p>
+      <h3>Summary Files</h3>
+      <table width="90%" border="0" class="details">
+         <tr>
+            <th align="left" width="90pt">class file</th>
+            <th align="center" width="90pt">high</th>
+            <th align="center" width="90pt">medium</th>
+            <th align="center" width="90pt">low</th>
+            <th align="center" width="90pt">total</th>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.SonoffBindingConstants.java" title="org.openhab.binding.sonoff.internal.SonoffBindingConstants.java">org.openhab.binding.sonoff.internal.SonoffBindingConstants.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.SonoffCacheProvider.java" title="org.openhab.binding.sonoff.internal.SonoffCacheProvider.java">org.openhab.binding.sonoff.internal.SonoffCacheProvider.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.SonoffHandlerFactory.java" title="org.openhab.binding.sonoff.internal.SonoffHandlerFactory.java">org.openhab.binding.sonoff.internal.SonoffHandlerFactory.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.communication.SonoffCommandMessage.java" title="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessage.java">org.openhab.binding.sonoff.internal.communication.SonoffCommandMessage.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageEncryptionUtilities.java" title="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageEncryptionUtilities.java">org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageEncryptionUtilities.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageUtilities.java" title="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageUtilities.java">org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageUtilities.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManager.java" title="org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManager.java">org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManager.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManagerListener.java" title="org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManagerListener.java">org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManagerListener.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.config.DeviceConfig.java" title="org.openhab.binding.sonoff.internal.config.DeviceConfig.java">org.openhab.binding.sonoff.internal.config.DeviceConfig.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.connection.SonoffApiConnection.java" title="org.openhab.binding.sonoff.internal.connection.SonoffApiConnection.java">org.openhab.binding.sonoff.internal.connection.SonoffApiConnection.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.connection.SonoffApiConnectionListener.java" title="org.openhab.binding.sonoff.internal.connection.SonoffApiConnectionListener.java">org.openhab.binding.sonoff.internal.connection.SonoffApiConnectionListener.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.connection.SonoffConnectionManager.java" title="org.openhab.binding.sonoff.internal.connection.SonoffConnectionManager.java">org.openhab.binding.sonoff.internal.connection.SonoffConnectionManager.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.connection.SonoffConnectionManagerListener.java" title="org.openhab.binding.sonoff.internal.connection.SonoffConnectionManagerListener.java">org.openhab.binding.sonoff.internal.connection.SonoffConnectionManagerListener.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.connection.SonoffLanConnection.java" title="org.openhab.binding.sonoff.internal.connection.SonoffLanConnection.java">org.openhab.binding.sonoff.internal.connection.SonoffLanConnection.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.connection.SonoffLanConnectionListener.java" title="org.openhab.binding.sonoff.internal.connection.SonoffLanConnectionListener.java">org.openhab.binding.sonoff.internal.connection.SonoffLanConnectionListener.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnection.java" title="org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnection.java">org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnection.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnectionListener.java" title="org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnectionListener.java">org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnectionListener.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.discovery.SonoffDiscoveryService.java" title="org.openhab.binding.sonoff.internal.discovery.SonoffDiscoveryService.java">org.openhab.binding.sonoff.internal.discovery.SonoffDiscoveryService.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.AbstractCommand.java" title="org.openhab.binding.sonoff.internal.dto.commands.AbstractCommand.java">org.openhab.binding.sonoff.internal.dto.commands.AbstractCommand.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.Brightness.java" title="org.openhab.binding.sonoff.internal.dto.commands.Brightness.java">org.openhab.binding.sonoff.internal.dto.commands.Brightness.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.Color.java" title="org.openhab.binding.sonoff.internal.dto.commands.Color.java">org.openhab.binding.sonoff.internal.dto.commands.Color.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.Consumption.java" title="org.openhab.binding.sonoff.internal.dto.commands.Consumption.java">org.openhab.binding.sonoff.internal.dto.commands.Consumption.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.Info.java" title="org.openhab.binding.sonoff.internal.dto.commands.Info.java">org.openhab.binding.sonoff.internal.dto.commands.Info.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.Login.java" title="org.openhab.binding.sonoff.internal.dto.commands.Login.java">org.openhab.binding.sonoff.internal.dto.commands.Login.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.Mode.java" title="org.openhab.binding.sonoff.internal.dto.commands.Mode.java">org.openhab.binding.sonoff.internal.dto.commands.Mode.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.MultiSwitch.java" title="org.openhab.binding.sonoff.internal.dto.commands.MultiSwitch.java">org.openhab.binding.sonoff.internal.dto.commands.MultiSwitch.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.MusicMode.java" title="org.openhab.binding.sonoff.internal.dto.commands.MusicMode.java">org.openhab.binding.sonoff.internal.dto.commands.MusicMode.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.RFChannel.java" title="org.openhab.binding.sonoff.internal.dto.commands.RFChannel.java">org.openhab.binding.sonoff.internal.dto.commands.RFChannel.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.RGBLight.java" title="org.openhab.binding.sonoff.internal.dto.commands.RGBLight.java">org.openhab.binding.sonoff.internal.dto.commands.RGBLight.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.SLed.java" title="org.openhab.binding.sonoff.internal.dto.commands.SLed.java">org.openhab.binding.sonoff.internal.dto.commands.SLed.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.Sensitivity.java" title="org.openhab.binding.sonoff.internal.dto.commands.Sensitivity.java">org.openhab.binding.sonoff.internal.dto.commands.Sensitivity.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.SingleSwitch.java" title="org.openhab.binding.sonoff.internal.dto.commands.SingleSwitch.java">org.openhab.binding.sonoff.internal.dto.commands.SingleSwitch.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.Speed.java" title="org.openhab.binding.sonoff.internal.dto.commands.Speed.java">org.openhab.binding.sonoff.internal.dto.commands.Speed.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.UiActive.java" title="org.openhab.binding.sonoff.internal.dto.commands.UiActive.java">org.openhab.binding.sonoff.internal.dto.commands.UiActive.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.White.java" title="org.openhab.binding.sonoff.internal.dto.commands.White.java">org.openhab.binding.sonoff.internal.dto.commands.White.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.commands.ZLed.java" title="org.openhab.binding.sonoff.internal.dto.commands.ZLed.java">org.openhab.binding.sonoff.internal.dto.commands.ZLed.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.ApiLoginRequest.java" title="org.openhab.binding.sonoff.internal.dto.requests.ApiLoginRequest.java">org.openhab.binding.sonoff.internal.dto.requests.ApiLoginRequest.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.ApiStatusChange.java" title="org.openhab.binding.sonoff.internal.dto.requests.ApiStatusChange.java">org.openhab.binding.sonoff.internal.dto.requests.ApiStatusChange.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.ApiStatusGet.java" title="org.openhab.binding.sonoff.internal.dto.requests.ApiStatusGet.java">org.openhab.binding.sonoff.internal.dto.requests.ApiStatusGet.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.GeneralRequest.java" title="org.openhab.binding.sonoff.internal.dto.requests.GeneralRequest.java">org.openhab.binding.sonoff.internal.dto.requests.GeneralRequest.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.ThingList.java" title="org.openhab.binding.sonoff.internal.dto.requests.ThingList.java">org.openhab.binding.sonoff.internal.dto.requests.ThingList.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.Things.java" title="org.openhab.binding.sonoff.internal.dto.requests.Things.java">org.openhab.binding.sonoff.internal.dto.requests.Things.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.WebsocketRequest.java" title="org.openhab.binding.sonoff.internal.dto.requests.WebsocketRequest.java">org.openhab.binding.sonoff.internal.dto.requests.WebsocketRequest.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.WsQuery.java" title="org.openhab.binding.sonoff.internal.dto.requests.WsQuery.java">org.openhab.binding.sonoff.internal.dto.requests.WsQuery.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.requests.WsUpdate.java" title="org.openhab.binding.sonoff.internal.dto.requests.WsUpdate.java">org.openhab.binding.sonoff.internal.dto.requests.WsUpdate.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.responses.Data.java" title="org.openhab.binding.sonoff.internal.dto.responses.Data.java">org.openhab.binding.sonoff.internal.dto.responses.Data.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.responses.LanResponse.java" title="org.openhab.binding.sonoff.internal.dto.responses.LanResponse.java">org.openhab.binding.sonoff.internal.dto.responses.LanResponse.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.responses.User.java" title="org.openhab.binding.sonoff.internal.dto.responses.User.java">org.openhab.binding.sonoff.internal.dto.responses.User.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.dto.responses.WsServerResponse.java" title="org.openhab.binding.sonoff.internal.dto.responses.WsServerResponse.java">org.openhab.binding.sonoff.internal.dto.responses.WsServerResponse.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffAccountHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffAccountHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffAccountHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffBaseBridgeHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffBaseBridgeHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffBaseBridgeHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffBaseDeviceHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffBaseDeviceHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffBaseDeviceHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffBaseZigbeeHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffBaseZigbeeHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffBaseZigbeeHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffDeviceListener.java" title="org.openhab.binding.sonoff.internal.handler.SonoffDeviceListener.java">org.openhab.binding.sonoff.internal.handler.SonoffDeviceListener.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffDeviceState.java" title="org.openhab.binding.sonoff.internal.handler.SonoffDeviceState.java">org.openhab.binding.sonoff.internal.handler.SonoffDeviceState.java</a></td>
+            <td align="center">
+               <div class="p1">2</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffDeviceStateParameters.java" title="org.openhab.binding.sonoff.internal.handler.SonoffDeviceStateParameters.java">org.openhab.binding.sonoff.internal.handler.SonoffDeviceStateParameters.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffGSMSocketHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffGSMSocketHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffGSMSocketHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffMagneticSwitchHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffMagneticSwitchHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffMagneticSwitchHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler.java</a></td>
+            <td align="center">
+               <div class="p1">2</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffRGBStripHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffRGBStripHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffRGBStripHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffRfBridgeHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffRfBridgeHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffRfBridgeHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceListener.java" title="org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceListener.java">org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceListener.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffSwitchMultiHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffSwitchMultiHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchMultiHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWR2Handler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWR2Handler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWR2Handler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffSwitchSingleHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffSwitchSingleHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchSingleHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffSwitchTHHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffSwitchTHHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchTHHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffZigbeeBridgeHandler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeBridgeHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffZigbeeBridgeHandler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice1770Handler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice1770Handler.java">org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice1770Handler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice2026Handler.java" title="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice2026Handler.java">org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice2026Handler.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDeviceListener.java" title="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDeviceListener.java">org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDeviceListener.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="dark">
+            <td></td>
+            <td align="center">
+               <div class="p1">74</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">5</div>
+            </td>
+            <td align="center">
+               <div class="p3">79</div>
+            </td>
+         </tr>
+      </table>
+      <p></p>
+      <h3>Details by Class</h3>
+      <table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.SonoffBindingConstants.java">org.openhab.binding.sonoff.internal.SonoffBindingConstants.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.SonoffCacheProvider.java">org.openhab.binding.sonoff.internal.SonoffCacheProvider.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td></td>
+            <td>bad practice</td>
+            <td>Logger should be non-static field (SLF4J)</td>
+            <td>
+               Logger should be non-static field. Change this field (logger) to non-static field.
+               
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>46</td>
+            <td>style</td>
+            <td>ConstantNameCheck</td>
+            <td>Name 'logger' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.SonoffHandlerFactory.java">org.openhab.binding.sonoff.internal.SonoffHandlerFactory.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessage.java">org.openhab.binding.sonoff.internal.communication.SonoffCommandMessage.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageEncryptionUtilities.java">org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageEncryptionUtilities.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageUtilities.java">org.openhab.binding.sonoff.internal.communication.SonoffCommandMessageUtilities.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManager.java">org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManager.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>135</td>
+            <td>style</td>
+            <td>NoEmptyLineSeparatorCheck</td>
+            <td>Remove empty line before closing brace</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>305</td>
+            <td>style</td>
+            <td>NoEmptyLineSeparatorCheck</td>
+            <td>Remove empty line after opening brace</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManagerListener.java">org.openhab.binding.sonoff.internal.communication.SonoffCommunicationManagerListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.config.DeviceConfig.java">org.openhab.binding.sonoff.internal.config.DeviceConfig.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.connection.SonoffApiConnection.java">org.openhab.binding.sonoff.internal.connection.SonoffApiConnection.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.connection.SonoffApiConnectionListener.java">org.openhab.binding.sonoff.internal.connection.SonoffApiConnectionListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.connection.SonoffConnectionManager.java">org.openhab.binding.sonoff.internal.connection.SonoffConnectionManager.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.connection.SonoffConnectionManagerListener.java">org.openhab.binding.sonoff.internal.connection.SonoffConnectionManagerListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.connection.SonoffLanConnection.java">org.openhab.binding.sonoff.internal.connection.SonoffLanConnection.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>122</td>
+            <td>error prone</td>
+            <td>EmptyIfStmt</td>
+            <td>
+               Avoid empty if statements
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.connection.SonoffLanConnectionListener.java">org.openhab.binding.sonoff.internal.connection.SonoffLanConnectionListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnection.java">org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnection.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnectionListener.java">org.openhab.binding.sonoff.internal.connection.SonoffWebSocketConnectionListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.discovery.SonoffDiscoveryService.java">org.openhab.binding.sonoff.internal.discovery.SonoffDiscoveryService.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.AbstractCommand.java">org.openhab.binding.sonoff.internal.dto.commands.AbstractCommand.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.Brightness.java">org.openhab.binding.sonoff.internal.dto.commands.Brightness.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.Color.java">org.openhab.binding.sonoff.internal.dto.commands.Color.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.Consumption.java">org.openhab.binding.sonoff.internal.dto.commands.Consumption.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.Info.java">org.openhab.binding.sonoff.internal.dto.commands.Info.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.Login.java">org.openhab.binding.sonoff.internal.dto.commands.Login.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.Mode.java">org.openhab.binding.sonoff.internal.dto.commands.Mode.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.MultiSwitch.java">org.openhab.binding.sonoff.internal.dto.commands.MultiSwitch.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.MusicMode.java">org.openhab.binding.sonoff.internal.dto.commands.MusicMode.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.RFChannel.java">org.openhab.binding.sonoff.internal.dto.commands.RFChannel.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.RGBLight.java">org.openhab.binding.sonoff.internal.dto.commands.RGBLight.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.SLed.java">org.openhab.binding.sonoff.internal.dto.commands.SLed.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.Sensitivity.java">org.openhab.binding.sonoff.internal.dto.commands.Sensitivity.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.SingleSwitch.java">org.openhab.binding.sonoff.internal.dto.commands.SingleSwitch.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.Speed.java">org.openhab.binding.sonoff.internal.dto.commands.Speed.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.UiActive.java">org.openhab.binding.sonoff.internal.dto.commands.UiActive.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.White.java">org.openhab.binding.sonoff.internal.dto.commands.White.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.commands.ZLed.java">org.openhab.binding.sonoff.internal.dto.commands.ZLed.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.ApiLoginRequest.java">org.openhab.binding.sonoff.internal.dto.requests.ApiLoginRequest.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.ApiStatusChange.java">org.openhab.binding.sonoff.internal.dto.requests.ApiStatusChange.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.ApiStatusGet.java">org.openhab.binding.sonoff.internal.dto.requests.ApiStatusGet.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.GeneralRequest.java">org.openhab.binding.sonoff.internal.dto.requests.GeneralRequest.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.ThingList.java">org.openhab.binding.sonoff.internal.dto.requests.ThingList.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.Things.java">org.openhab.binding.sonoff.internal.dto.requests.Things.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.WebsocketRequest.java">org.openhab.binding.sonoff.internal.dto.requests.WebsocketRequest.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.WsQuery.java">org.openhab.binding.sonoff.internal.dto.requests.WsQuery.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.requests.WsUpdate.java">org.openhab.binding.sonoff.internal.dto.requests.WsUpdate.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.responses.Data.java">org.openhab.binding.sonoff.internal.dto.responses.Data.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.responses.LanResponse.java">org.openhab.binding.sonoff.internal.dto.responses.LanResponse.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.responses.User.java">org.openhab.binding.sonoff.internal.dto.responses.User.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.dto.responses.WsServerResponse.java">org.openhab.binding.sonoff.internal.dto.responses.WsServerResponse.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffAccountHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffAccountHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffBaseBridgeHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffBaseBridgeHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffBaseDeviceHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffBaseDeviceHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffBaseZigbeeHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffBaseZigbeeHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffDeviceListener.java">org.openhab.binding.sonoff.internal.handler.SonoffDeviceListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffDeviceState.java">org.openhab.binding.sonoff.internal.handler.SonoffDeviceState.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>1</td>
+            <td>35</td>
+            <td>correctness</td>
+            <td>Illegal class is passed to LoggerFactory#getLogger(Class) (SLF4J)</td>
+            <td>
+               Illegal class is passed to LoggerFactory#getLogger(Class). It should be one of [org.openhab.binding.sonoff.internal.handler.SonoffDeviceState].
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffDeviceStateParameters.java">org.openhab.binding.sonoff.internal.handler.SonoffDeviceStateParameters.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffGSMSocketHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffGSMSocketHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffMagneticSwitchHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffMagneticSwitchHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>1</td>
+            <td>39</td>
+            <td>correctness</td>
+            <td>Illegal class is passed to LoggerFactory#getLogger(Class) (SLF4J)</td>
+            <td>
+               Illegal class is passed to LoggerFactory#getLogger(Class). It should be one of [org.openhab.binding.sonoff.internal.handler.SonoffRGBCCTHandler].
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffRGBStripHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffRGBStripHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffRfBridgeHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffRfBridgeHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceListener.java">org.openhab.binding.sonoff.internal.handler.SonoffRfDeviceListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchMultiHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchMultiHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWR2Handler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchPOWR2Handler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchSingleHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchSingleHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffSwitchTHHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffSwitchTHHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeBridgeHandler.java">org.openhab.binding.sonoff.internal.handler.SonoffZigbeeBridgeHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice1770Handler.java">org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice1770Handler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice2026Handler.java">org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDevice2026Handler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDeviceListener.java">org.openhab.binding.sonoff.internal.handler.SonoffZigbeeDeviceListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>1</td>
+            <td>2</td>
+            <td>style</td>
+            <td>ParameterizedRegexpHeaderCheck</td>
+            <td>Header line doesn't match pattern ^ \* Copyright \(c\) 2010-2020 Contributors to the openHAB project$</td>
+         </tr>
+      </table><br></body>
+</html>
